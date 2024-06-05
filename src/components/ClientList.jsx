@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import '../styles/ClientList.css';
+import '../components/ClientList.css';
 
 const ClientList = () => {
   const [clients, setClients] = useState([]);
@@ -8,7 +8,7 @@ const ClientList = () => {
 
   const fetchClients = async () => {
     try {
-      const response = await axios.get('http://18.230.23.174:8080/clients/list');
+      const response = await axios.get('/clients/list');
       if (response.data === "Não há cliente cadastrado") {
         setMessage(response.data);
         setClients([]);
@@ -17,8 +17,8 @@ const ClientList = () => {
         setMessage('');
       }
     } catch (error) {
-      console.error('Erro ao buscar os clientes:', error);  // Adicionando log do erro
-      console.error('Resposta do erro:', error.response);  // Adicionando log da resposta do erro
+      console.error('Erro ao buscar os clientes:', error);
+      console.error('Resposta do erro:', error.response);
       setMessage('Ocorreu um erro ao buscar os clientes');
       setClients([]);
     }
