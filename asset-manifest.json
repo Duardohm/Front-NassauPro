@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Front-NassauPro/static/css/main.43b8e240.css",
-    "main.js": "/Front-NassauPro/static/js/main.6640f4c2.js",
+    "main.js": "/Front-NassauPro/static/js/main.c6284929.js",
     "static/js/453.8ab44547.chunk.js": "/Front-NassauPro/static/js/453.8ab44547.chunk.js",
     "index.html": "/Front-NassauPro/index.html",
     "main.43b8e240.css.map": "/Front-NassauPro/static/css/main.43b8e240.css.map",
-    "main.6640f4c2.js.map": "/Front-NassauPro/static/js/main.6640f4c2.js.map",
+    "main.c6284929.js.map": "/Front-NassauPro/static/js/main.c6284929.js.map",
     "453.8ab44547.chunk.js.map": "/Front-NassauPro/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.43b8e240.css",
-    "static/js/main.6640f4c2.js"
+    "static/js/main.c6284929.js"
   ]
 }
