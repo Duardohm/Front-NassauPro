@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import '../components/ClientList.css';
+import '..//ClientList.css';
 
 const ClientList = () => {
   const [clients, setClients] = useState([]);
@@ -8,7 +8,7 @@ const ClientList = () => {
 
   const fetchClients = async () => {
     try {
-      const response = await axios.get('/clients/list');
+      const response = await axios.get('/clients/list'); // Caminho relativo
       if (response.data === "Não há cliente cadastrado") {
         setMessage(response.data);
         setClients([]);
